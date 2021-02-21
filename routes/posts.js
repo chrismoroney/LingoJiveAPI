@@ -1,7 +1,7 @@
 let express = require('express');
 let router = express.Router();
 // For the Data Model
-let Post = require('../models/Post.js');
+let PostSchema = require('../models/Post.js');
 
 
 function HandleError(response, reason, message, code){
@@ -10,19 +10,34 @@ function HandleError(response, reason, message, code){
 }
 
 router.get('/', (req, res) => {
-    Post.find({},(err, posts)=> {
+    PostSchema.find({},(err, posts)=> {
         // res.sendFile('posts.html', {root: 'views'});
         res.send(posts);
     })
 })
 
 router.post('/', (req, res) => {
-    let post = new Post(req.body);
-    post.save((err) =>{
-        if(err)
-            sendStatus(500);
-        res.sendStatus(200);
-    })
+    let newPost = JSON.parse(JSON.stringify(req.body));
+    let post = new PostSchema({
+        Name: newPost.Name,
+        Body: newPost.Body,
+    });
+    post.save((error) => {
+        if (error){
+            response.send({"error": error});
+        }else{
+            PostSchema.find({},(err, posts)=> {
+                // res.sendFile('posts.html', {root: 'views'});
+                res.send(posts);
+            })
+        }
+    });
+    // let post = new Post(req.body);
+    // post.save((err) =>{
+    //     if(err)
+    //         sendStatus(500);
+    //     res.sendStatus(200);
+    // })
 })
 
 module.exports = router;
