@@ -9,9 +9,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35a89bb7-5463-4990-aa9c-68381de591c6" name="Default Changelist" comment="">
+    <list default="true" id="09aaf0d9-de41-43a2-add8-cf72b7b0211e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/LingoJiveAPI.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/posts.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,63 +28,51 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1ols59lEFBDvn41t5edZ7l1R4Oi" />
+  <component name="ProjectId" id="1op6Lg110npA7CT8ooieZsowXzT" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.18.3" />
+    <property name="javascript.nodejs.core.library.typings.version" value="12.20.4" />
+    <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\andre\Development\LingoJiveAPI" />
-      <recent name="C:\Users\andre\Development\LingoJiveAPI\routes" />
-    </key>
-  </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="35a89bb7-5463-4990-aa9c-68381de591c6" name="Default Changelist" comment="" />
-      <created>1613872326175</created>
+      <changelist id="09aaf0d9-de41-43a2-add8-cf72b7b0211e" name="Default Changelist" comment="" />
+      <created>1613971132943</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1613872326175</updated>
-      <workItem from="1613872328011" duration="6434000" />
+      <updated>1613971132943</updated>
+      <workItem from="1613971134843" duration="122000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1237" height="182" key="GridCell.Tab.0.bottom" timestamp="1613875354258">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1638" height="248" key="GridCell.Tab.0.bottom" timestamp="1613971277289">
+      <screen x="0" y="23" width="1680" height="979" />
     </state>
-    <state width="1237" height="182" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1613875354258" />
-    <state width="1237" height="182" key="GridCell.Tab.0.center" timestamp="1613875354258">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1638" height="248" key="GridCell.Tab.0.bottom/0.23.1680.979@0.23.1680.979" timestamp="1613971277289" />
+    <state width="1638" height="248" key="GridCell.Tab.0.center" timestamp="1613971277288">
+      <screen x="0" y="23" width="1680" height="979" />
     </state>
-    <state width="1237" height="182" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1613875354258" />
-    <state width="1237" height="182" key="GridCell.Tab.0.left" timestamp="1613875354258">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1638" height="248" key="GridCell.Tab.0.center/0.23.1680.979@0.23.1680.979" timestamp="1613971277288" />
+    <state width="1638" height="248" key="GridCell.Tab.0.left" timestamp="1613971277288">
+      <screen x="0" y="23" width="1680" height="979" />
     </state>
-    <state width="1237" height="182" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1613875354258" />
-    <state width="1237" height="182" key="GridCell.Tab.0.right" timestamp="1613875354258">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1638" height="248" key="GridCell.Tab.0.left/0.23.1680.979@0.23.1680.979" timestamp="1613971277288" />
+    <state width="1638" height="248" key="GridCell.Tab.0.right" timestamp="1613971277289">
+      <screen x="0" y="23" width="1680" height="979" />
     </state>
-    <state width="1237" height="182" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1613875354258" />
+    <state width="1638" height="248" key="GridCell.Tab.0.right/0.23.1680.979@0.23.1680.979" timestamp="1613971277289" />
   </component>
 </project>
