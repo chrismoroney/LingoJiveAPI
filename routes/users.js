@@ -55,11 +55,12 @@ router.get('/', (request, response, next) => {
     response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
 
     // firstname if found produces [this.response] instead of just this.response
-    let name = request.query['name'];
-    if (name){
+    let firstname = request.query['firstname'];
+    //let lastname = request.query['lastname'];
+    if (firstname){
         User
             // need to adjust for case sensitivity
-            .find({"name": name})
+            .find({"firstname": firstname})
             .exec( (error, User) => {
                 if (error){
                     response.send({"error": error});
