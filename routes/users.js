@@ -35,8 +35,7 @@ router.post('/', (request, response, next) => {
         HandleError(response, 'Passwords not matching', 'Passwords do not match', 500);
     } else {
         let user = new User({
-            firstname: newUser.firstname,
-            lastname: newUser.lastname,
+            name: newUser.name,
             username: newUser.username,
             password: newUser.password,
             confirmpassword: newUser.confirmpassword,
@@ -52,45 +51,33 @@ router.post('/', (request, response, next) => {
 });
 
 router.get('/', (request, response, next) => {
-  response.header("Access-Control-Allow-Origin", "*");
-  response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    response.header("Access-Control-Allow-Origin", "*");
+    response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
 
-  // firstname and lastname if found produces [this.response] instead of just this.response
-  let firstname = request.query['firstname'];
-  let lastname = request.query['lastname'];
-  if (firstname){
-    User
-        // need to adjust for case sensitivity
-        .find({"firstname": firstname})
-        .exec( (error, User) => {
-          if (error){
-            response.send({"error": error});
-          }else{
-            response.send(User);
-          }
-        });
-  } else if (lastname){
-      User
-          // need to adjust for case sensitivity
-          .find({"lastname": lastname})
-          .exec( (error, User) => {
-              if (error){
-                  response.send({"error": error});
-              }else{
-                  response.send(User);
-              }
-          });
-  } else {
-      User
-         .find()
-         .exec( (error, User) => {
-           if (error){
-             response.send({"error": error});
-           }else{
-             response.send(User);
-           }
-         });
-  }
+    // firstname if found produces [this.response] instead of just this.response
+    let name = request.query['name'];
+    if (name){
+        User
+            // need to adjust for case sensitivity
+            .find({"name": name})
+            .exec( (error, User) => {
+                if (error){
+                    response.send({"error": error});
+                } else {
+                    response.send(User);
+                }
+            });
+    } else {
+        User
+            .find()
+            .exec( (error, User) => {
+                if (error){
+                    response.send({"error": error});
+                } else {
+                    response.send(User);
+                }
+            });
+    }
 } );
 
 router.get('/:username', (request, response, next) =>{
