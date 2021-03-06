@@ -35,7 +35,8 @@ router.post('/', (request, response, next) => {
         HandleError(response, 'Passwords not matching', 'Passwords do not match', 500);
     } else {
         let user = new User({
-            name: newUser.name,
+            firstname: newUser.firstname,
+            lastname: newUser.lastname,
             username: newUser.username,
             password: newUser.password,
             confirmpassword: newUser.confirmpassword,
