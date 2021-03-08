@@ -83,9 +83,8 @@ router.get('/', (request, response, next) => {
 } );
 
 router.get('/:username', (request, response, next) =>{
-    let username = request.query['username'];
     User
-        .find({"username": username}, (error, result) =>{
+        .find({"username": request.params.username}, (error, result) =>{
             if (error) {
                 response.status(500).send(error);
             }
