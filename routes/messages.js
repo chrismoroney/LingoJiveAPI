@@ -16,6 +16,8 @@ router.get('/', (req, res) => {
 })
 
 router.post('/', (req, res) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     let message = new Message(req.body);
     message.save((err) =>{
         if(err)
