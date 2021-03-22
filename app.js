@@ -20,6 +20,7 @@ var homepageRouter = require('./routes/homepage');
 var myprofileRouter = require('./routes/myprofile');
 var createprofileRouter = require('./routes/createprofile');
 var chatsRouter = require('./routes/chats');
+var dmRouter = require('./routes/directmessages');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -44,6 +45,7 @@ app.use('/homepage', homepageRouter);
 app.use('/myprofile', myprofileRouter);
 app.use('/createprofile', createprofileRouter);
 app.use('/chats', chatsRouter);
+app.use('/directMessages', dmRouter);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
