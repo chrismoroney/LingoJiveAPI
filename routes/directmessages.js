@@ -1,16 +1,10 @@
 let express = require('express');
 let router = express.Router();
 // For the Data Model
-let Message = require('../models/Message.js');
+let DirectMessage = require('../models/DirectMessage.js');
 
-
-function HandleError(response, reason, message, code){
-    console.log('ERROR: ' + reason);
-    response.status(code || 500).json({"error:": message});
-}
-
-router.get('/', (req, res) => {
-    Message.find({},(err, messages)=> {
+router.get('/:ChatID', (req, res) => {
+    DirectMessage.find({"ChatID": req.params.ChatID},(err, messages)=> {
         res.send(messages);
     })
 })
@@ -18,7 +12,7 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    let message = new Message(req.body);
+    let message = new DirectMessage(req.body);
     message.save((err) =>{
         if(err)
             res.sendStatus(500);
