@@ -27,15 +27,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74e15a10-537a-4d6d-862c-b04ce3bdd652" name="Default Changelist" comment="Added chat saving">
-      <change afterPath="$PROJECT_DIR$/models/DirectMessage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/directmessages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Message.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Message.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/chats.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/chats.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/messages.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/messages.js" afterDir="false" />
-    </list>
+    <list default="true" id="74e15a10-537a-4d6d-862c-b04ce3bdd652" name="Default Changelist" comment="Added chat saving" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,6 +35,13 @@
   </component>
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -76,7 +75,7 @@
       </method>
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -102,7 +101,9 @@
       <workItem from="1615000795452" duration="37000" />
       <workItem from="1615001891803" duration="235000" />
       <workItem from="1615002691462" duration="12000" />
-      <workItem from="1615242311382" duration="376000" />
+      <workItem from="1615242311382" duration="479000" />
+      <workItem from="1615272296734" duration="3000" />
+      <workItem from="1616620497624" duration="791000" />
     </task>
     <task id="LOCAL-00001" summary="Added chat saving">
       <created>1616369911517</created>
@@ -127,6 +128,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added chat saving" />
@@ -137,34 +139,37 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="421" y="116" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1616296584710" />
-    <state width="1237" height="176" key="GridCell.Tab.0.bottom" timestamp="1616439130211">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state width="1638" height="248" key="GridCell.Tab.0.bottom" timestamp="1616442267054">
+      <screen x="0" y="23" width="1680" height="981" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1614113041159" />
     <state width="1237" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1616439130211" />
     <state width="1638" height="248" key="GridCell.Tab.0.bottom/0.23.1680.979@0.23.1680.979" timestamp="1614020957362" />
+    <state width="1638" height="248" key="GridCell.Tab.0.bottom/0.23.1680.981@0.23.1680.981" timestamp="1616442267054" />
     <state width="1877" height="266" key="GridCell.Tab.0.bottom/1920.-87.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615242477799" />
-    <state width="1237" height="176" key="GridCell.Tab.0.center" timestamp="1616439130210">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state width="1638" height="248" key="GridCell.Tab.0.center" timestamp="1616442267053">
+      <screen x="0" y="23" width="1680" height="981" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1614113041158" />
     <state width="1237" height="176" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1616439130210" />
     <state width="1638" height="248" key="GridCell.Tab.0.center/0.23.1680.979@0.23.1680.979" timestamp="1614020957362" />
+    <state width="1638" height="248" key="GridCell.Tab.0.center/0.23.1680.981@0.23.1680.981" timestamp="1616442267053" />
     <state width="1877" height="266" key="GridCell.Tab.0.center/1920.-87.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615242477799" />
-    <state width="1237" height="176" key="GridCell.Tab.0.left" timestamp="1616439130209">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state width="1638" height="248" key="GridCell.Tab.0.left" timestamp="1616442267053">
+      <screen x="0" y="23" width="1680" height="981" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1614113041158" />
     <state width="1237" height="176" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1616439130209" />
     <state width="1638" height="248" key="GridCell.Tab.0.left/0.23.1680.979@0.23.1680.979" timestamp="1614020957361" />
+    <state width="1638" height="248" key="GridCell.Tab.0.left/0.23.1680.981@0.23.1680.981" timestamp="1616442267053" />
     <state width="1877" height="266" key="GridCell.Tab.0.left/1920.-87.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615242477799" />
-    <state width="1237" height="176" key="GridCell.Tab.0.right" timestamp="1616439130210">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state width="1638" height="248" key="GridCell.Tab.0.right" timestamp="1616442267054">
+      <screen x="0" y="23" width="1680" height="981" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1614113041158" />
     <state width="1237" height="176" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1616439130210" />
     <state width="1638" height="248" key="GridCell.Tab.0.right/0.23.1680.979@0.23.1680.979" timestamp="1614020957362" />
-    <state width="1877" height="266" key="GridCell.Tab.0.right/1920.-87.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615242477799" />
+    <state width="1877" height="266" key="GridCell.Tab.0.right/1920.-87.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615242793496" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1614997970722">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -220,7 +225,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/routes/chats.js</url>
           <line>50</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
