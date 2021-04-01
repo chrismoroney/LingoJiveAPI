@@ -8,7 +8,7 @@ router.get('/:ChatID', (req, res) => {
         res.send(messages);
     })
 })
- //Hello
+
 router.post('/', (req, res) => {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
