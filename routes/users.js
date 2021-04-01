@@ -40,6 +40,9 @@ router.post('/', (request, response, next) => {
             username: newUser.username,
             password: newUser.password,
             confirmpassword: newUser.confirmpassword,
+            bio: newUser.bio,
+            langExp: newUser.langExp,
+            langLearn: newUser.langLearn
         });
         user.save((error) => {
             if (error) {
@@ -121,32 +124,5 @@ router.patch('/:username', (request, response, next) =>{
         });
 });
 
-// router.delete('/:isbn', (request, response, next) =>{
-//   response.header("Access-Control-Allow-Origin", "*");
-//   response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-//
-//   var re = /^(?=(?:\D*\d){10}(?:(?:\D*\d){3})?$)[\d-]+$/;
-//   var match = re.exec(request.params.isbn);
-//
-//   if(!match){
-//     HandleError(response, 'Invalid ISBN', 'ISBN format is invalid', 500);
-//   }else {
-//     User
-//         .findOne({"ISBN": request.params.isbn}, (error, result) => {
-//           if (error) {
-//             response.status(500).send(error);
-//           } else if (result) {
-//             result.remove((error) => {
-//               if (error) {
-//                 response.status(500).send(error);
-//               }
-//               response.send({"deletedISBN": request.params.isbn});
-//             });
-//           } else {
-//             response.status(404).send({"ISBN": request.params.isbn, "error": "Not Found"});
-//           }
-//         });
-//   }
-// });
 
 module.exports = router;
