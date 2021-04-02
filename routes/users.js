@@ -40,7 +40,7 @@ router.post('/', (request, response, next) => {
             username: newUser.username,
             password: newUser.password,
             confirmpassword: newUser.confirmpassword,
-            bio: newUser.bio,
+            bio: newUser.bio = "",
             langExp: newUser.langExp,
             langLearn: newUser.langLearn
         });
