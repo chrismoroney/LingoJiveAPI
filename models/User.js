@@ -10,7 +10,8 @@ let UserSchema = new Schema({
     confirmpassword: String,
     bio: String,
     langExp: [String],
-    langLearn: [String]
+    langLearn: [String],
+    onlineStatus: Boolean
 });
 
 module.exports = mongoose.model('User', UserSchema);
