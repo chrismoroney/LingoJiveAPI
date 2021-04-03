@@ -44,13 +44,25 @@ router.get('/:user', (request, response, next) =>{
 
 
 router.post('/', (request, response, next) => {
-    let newChat = request.body;
-    console.log("Name:" + request.body.Name);
-    console.log("Members 1: " + request.body.Members[0]);
-    console.log("Members type: " + typeof(request.body.Members));
-    var arrayMembers = request.body.Members;
-    console.log(arrayMembers);
-    Chat.find({ Members: [ request.body.Members[0], request.body.Members[1] ]}, (error, result) =>{
+    var members = [];
+    members.push(request.body.Member1);
+    members.push(request.body.Member2);
+    // let newChat = request.body;
+    let newChat = {
+        Name: request.body.Name,
+        Members: members
+    }
+
+    // console.log("Name:" + request.body.Name);
+    // console.log("Members 1: " + request.body.Members[0]);
+    // console.log("Members type: " + typeof(request.body.Members));
+
+    console.log("Members type: " + typeof(newChat.Members));
+
+
+    // var arrayMembers = request.body.Members;
+    // console.log(arrayMembers);
+    Chat.find({ Members: newChat.Members /* [ request.body.Members[0], request.body.Members[1] ] */}, (error, result) =>{
         console.log("Shared members: " + result);
         console.log("Members: " + newChat.Members);
         if(JSON.stringify(result) != "[]"){
