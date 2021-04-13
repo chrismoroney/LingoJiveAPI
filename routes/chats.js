@@ -4,8 +4,6 @@ let router = express.Router();
 let Chat = require('../models/Chat.js');
 
 router.get('/', (request, response, next) =>{
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     Chat.find( (error, result) =>{
             console.log(result);
             if (error) {
@@ -24,8 +22,6 @@ router.get('/', (request, response, next) =>{
 });
 
 router.get('/:user', (request, response, next) =>{
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     if(request.params.user){
         Chat.find({ Members: { $all: [request.params.user] } }, (error, result) =>{
                 console.log(result);
@@ -47,8 +43,6 @@ router.get('/:user', (request, response, next) =>{
 
 
 router.post('/', (request, response, next) => {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     var members = [];
     members.push(request.body.Member1);
     members.push(request.body.Member2);
@@ -91,8 +85,6 @@ router.post('/', (request, response, next) => {
 
 //probably won't be used in the real program; just wanted to delete repeat chats
 router.delete('/:user', (request, response, next) =>{
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     if(request.params.user){
         Chat.findOne({ Members: { $all: [request.params.user] } }, (error, result) =>{
                 console.log(result);
