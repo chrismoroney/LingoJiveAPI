@@ -4,6 +4,8 @@ let router = express.Router();
 let DirectMessage = require('../models/DirectMessage.js');
 
 router.get('/:ChatID', (req, res) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     DirectMessage.find({"ChatID": req.params.ChatID},(err, messages)=> {
         res.send(messages);
     })
