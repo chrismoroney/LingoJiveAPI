@@ -11,7 +11,9 @@ let UserSchema = new Schema({
     bio: String,
     langExp: [String],
     langLearn: [String],
-    onlineStatus: Boolean
+    onlineStatus: Boolean,
+    blocking: [String],
+    blockedBy: [String]
 });
 
 module.exports = mongoose.model('User', UserSchema);
