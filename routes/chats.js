@@ -46,10 +46,12 @@ router.post('/', (request, response, next) => {
     var members = [];
     members.push(request.body.Member1);
     members.push(request.body.Member2);
+    var unreadby = [];
     // let newChat = request.body;
     let newChat = {
         Name: request.body.Name,
-        Members: members
+        Members: members,
+        UnreadBy: unreadby
     }
 
     // console.log("Name:" + request.body.Name);
