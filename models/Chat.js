@@ -6,6 +6,6 @@ let ChatSchema = new Schema({
     Name: {type: String, required: true},
     //ID: {type: String, required: true},
     Members: [String],
-    UnreadBy: [String]
+    UnreadBy: String
 })
 module.exports = mongoose.model('Chat', ChatSchema);

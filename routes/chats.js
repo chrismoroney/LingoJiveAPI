@@ -43,10 +43,11 @@ router.get('/:user', (request, response, next) =>{
 
 
 router.post('/', (request, response, next) => {
+    console.log("post entered");
     var members = [];
     members.push(request.body.Member1);
     members.push(request.body.Member2);
-    var unreadby = [];
+    var unreadby = "";
     // let newChat = request.body;
     let newChat = {
         Name: request.body.Name,
@@ -67,15 +68,20 @@ router.post('/', (request, response, next) => {
         console.log("Shared members: " + result);
         console.log("Members: " + newChat.Members);
         if(JSON.stringify(result) != "[]"){
+            console.log("copy found");
             response.send( {"id": result["ID"]});
         }
         else{
+            console.log("new chat being added");
             let chat = new Chat({
                 Name: newChat.Name,
-                Members: newChat.Members
+                Members: newChat.Members,
+                UnreadBy: newChat.UnreadBy
             });
             chat.save((error) => {
+                console.log("chat being saved");
                 if (error){
+                    console.log("error saving");
                     response.send({"error": error});
                 }else{
                     response.send({"id": chat.id});
@@ -109,6 +115,51 @@ router.delete('/:user', (request, response, next) =>{
 
         );
     }
+});
+
+router.patch('/', (request, response, next) => {
+    console.log("??????");
+    Chat.
+        findOne({"_id": request.body.ChatID}, (error, result) =>{
+            if(error){
+                console.log("error");
+                response.status(500).send(error);
+            }
+            else if(result){
+                console.log("result found");
+                console.log(request.body.Recipient);
+                result["UnreadBy"] = request.body.Recipient;
+                result.save((error)=>{
+                    if(error){
+                        console.log("can't save chat patch");
+                        response.status(500).send(error);
+                    }
+                    console.log("successfully made patch");
+                    response.status(200).send(request.body.Recipient)
+                })
+            }else{
+                response.status(404).send("Chat not found");
+                console.log("no result found")
+            }
+    });
+    // User
+    //     .findOne({"username": request.params.username}, (error, result)=>{
+    //         if (error) {
+    //             response.status(500).send(error);
+    //         }
+    //         else if (result){
+    //             result["blocking"] = request.body["blockedUser"];
+    //             result.save((error)=>{
+    //                 if (error){
+    //                     response.status(500).send(error);
+    //                 }
+    //                 response.status(200).send(request.body["blockedUser"]);
+    //             });
+    //         } else {
+    //             response.status(404).send({"username": request.params.username, "error":  "Not Found"});
+    //         }
+    //
+    //     });
 });
 
 module.exports = router;
