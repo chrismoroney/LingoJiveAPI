@@ -37,10 +37,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
+app.use('/', loginRouter);
 app.use('/socket', socketRouter);
 app.use('/users', usersRouter);
 app.use('/messages', messagesRouter);
 app.use('/posts', postsRouter);
+app.use('/homepage', homepageRouter);
+app.use('/myprofile', myprofileRouter);
+app.use('/createprofile', createprofileRouter);
 app.use('/chats', chatsRouter);
 app.use('/directMessages', dmRouter);
 app.use('/blockUser', blockRouter);
