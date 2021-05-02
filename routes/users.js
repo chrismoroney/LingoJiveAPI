@@ -123,6 +123,22 @@ router.patch('/:username', (request, response, next) =>{
 
         });
 });
-
+router.delete('/:username', (request, response, next) =>{
+    User
+        .findOne({"username": request.params.username}, (error, result)=>{
+            if (error) {
+                response.status(500).send(error);
+            } else if (result){
+                result.remove((error)=>{
+                    if (error){
+                        response.status(500).send(error);
+                    }
+                    response.send({"deleted_username": request.params.username});
+                });
+            } else {
+                response.status(404).send({"ISBN": request.params.username, "error":  "Not Found"});
+            }
+        });
+});
 
 module.exports = router;
