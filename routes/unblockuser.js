@@ -14,7 +14,7 @@ router.patch('/:username', (request, response, next) => {
             else if (result){
                 for(let i = 0; i < result["blockedBy"].length; i++){
                     if(result["blockedBy"][i] === request.params.username){
-                        result["blockedBy"][i] = "";
+                        result["blockedBy"].splice(i,1);
                     }
                 }
                 result.save((error)=>{
@@ -34,10 +34,7 @@ router.patch('/:username', (request, response, next) => {
             else if (result){
                 for(let i = 0; i < result["blocking"].length; i++){
                     if(result["blocking"][i] === request.body["blockedUser"]){
-                        console.log(i);
-                        console.log(result["blocking"][i]);
-                        result["blocking"][i] = "";
-                        console.log(result["blocking"][i]);
+                        result["blocking"].splice(i,1);
                     }
                 }
                 result.save((error)=>{
