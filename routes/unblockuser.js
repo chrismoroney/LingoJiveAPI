@@ -12,8 +12,10 @@ router.patch('/:username', (request, response, next) => {
                 response.status(500).send(error);
             }
             else if (result){
-                if(result["blockedBy"].indexOf(request.params.username) == -1){
-                    result["blockedBy"].push(request.params.username);
+                for(let i = 0; i < result["blockedBy"].length; i++){
+                    if(result["blockedBy"][i] === request.params.username){
+                        result["blockedBy"][i] = "";
+                    }
                 }
                 result.save((error)=>{
                     if (error){
@@ -30,9 +32,13 @@ router.patch('/:username', (request, response, next) => {
                 response.status(500).send(error);
             }
             else if (result){
-                if(result["blocking"].indexOf(request.body["blockedUser"]) == -1){
-                    result["blocking"].push(request.body["blockedUser"]);
-
+                for(let i = 0; i < result["blocking"].length; i++){
+                    if(result["blocking"][i] === request.body["blockedUser"]){
+                        console.log(i);
+                        console.log(result["blocking"][i]);
+                        result["blocking"][i] = "";
+                        console.log(result["blocking"][i]);
+                    }
                 }
                 result.save((error)=>{
                     if (error){
