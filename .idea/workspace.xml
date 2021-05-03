@@ -28,10 +28,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74e15a10-537a-4d6d-862c-b04ce3bdd652" name="Default Changelist" comment="Added chat saving">
-      <change afterPath="$PROJECT_DIR$/routes/unblockuser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/blockuser.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/blockuser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,6 +113,7 @@
       <workItem from="1619060260521" duration="1313000" />
       <workItem from="1619554062192" duration="10487000" />
       <workItem from="1619915862266" duration="45000" />
+      <workItem from="1619979021326" duration="359000" />
     </task>
     <task id="LOCAL-00001" summary="Added chat saving">
       <created>1616369911517</created>
