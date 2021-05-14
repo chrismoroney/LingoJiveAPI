@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-
 let Schema = mongoose.Schema;
 
 let UserSchema = new Schema({
@@ -15,7 +14,8 @@ let UserSchema = new Schema({
     following: [String],
     blocked: [String],
     blocking: [String],
-    blockedBy: [String]
+    blockedBy: [String],
+    profileImage: String
 });
 
 module.exports = mongoose.model('User', UserSchema);

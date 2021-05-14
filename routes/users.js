@@ -14,17 +14,39 @@ let express = require('express');
 let router = express.Router();
 // For the Data Model
 let User = require('../models/User.js');
-
+let multer = require('multer');
+let storage = multer.diskStorage({
+    destination: function(req, file, callback){
+        callback(null, './profilepics/');
+    },
+    filename: function(req, file, callback) {
+        callback(null, new Date().toISOString() + file.originalname);
+    }
+});
+let filter = function(req, file, callback){
+    if(file.mimetype === 'image/jpeg' || file.mimetype === 'image/jpg' || file.mimetype === 'image/png'){
+        callback(null, true);
+    } else {
+        callback(null, false);
+    }
+}
+let upload = multer({
+    storage: storage,
+    limits: {
+        fileSize: 1024 * 1024 * 5
+    },
+    fileFilter: filter
+});
 
 function HandleError(response, reason, message, code){
   console.log('ERROR: ' + reason);
   response.status(code || 500).json({"error:": message});
 }
 
-router.post('/', (request, response, next) => {
+router.post('/', upload.single('profileImage'),(request, response, next) => {
     response.header("Access-Control-Allow-Origin", "*");
     response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-
+    console.log(request.file);
     let obj = JSON.parse(JSON.stringify(request.body));
     let newUser = obj;
     console.log(newUser);
@@ -42,7 +64,8 @@ router.post('/', (request, response, next) => {
             confirmpassword: newUser.confirmpassword,
             bio: newUser.bio,
             langExp: newUser.langExp,
-            langLearn: newUser.langLearn
+            langLearn: newUser.langLearn,
+            profileImage: request.file.path
         });
         user.save((error) => {
             if (error) {
