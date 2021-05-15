@@ -65,7 +65,7 @@ router.post('/', upload.single('profileImage'),(request, response, next) => {
             bio: newUser.bio,
             langExp: newUser.langExp,
             langLearn: newUser.langLearn,
-            //profileImage: request.file.path
+            profileImage: request.file.path
         });
         user.save((error) => {
             if (error) {

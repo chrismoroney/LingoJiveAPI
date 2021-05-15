@@ -15,7 +15,7 @@ let UserSchema = new Schema({
     blocked: [String],
     blocking: [String],
     blockedBy: [String],
-    profileImage: String
+    profileImage: {type: String, required: false}
 });
 
 module.exports = mongoose.model('User', UserSchema);
