@@ -39,11 +39,11 @@ let upload = multer({
 });
 
 function HandleError(response, reason, message, code){
-  console.log('ERROR: ' + reason);
-  response.status(code || 500).json({"error:": message});
+    console.log('ERROR: ' + reason);
+    response.status(code || 500).json({"error:": message});
 }
 
-router.post('/', upload.single('profileImage'),(request, response, next) => {
+router.post('/',(request, response, next) => {
     response.header("Access-Control-Allow-Origin", "*");
     response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     //console.log(request.file);
@@ -65,7 +65,7 @@ router.post('/', upload.single('profileImage'),(request, response, next) => {
             bio: newUser.bio,
             langExp: newUser.langExp,
             langLearn: newUser.langLearn,
-            profileImage: request.file.path
+            profileImage: newUser.profileImage
         });
         user.save((error) => {
             if (error) {
@@ -122,7 +122,7 @@ router.get('/:username', (request, response, next) =>{
 
         });
 });
-router.patch('/:username', (request, response, next) =>{
+router.patch('/:username', upload.single('profileImage'), (request, response, next) =>{
     User
         .findOne({"username": request.params.username}, (error, result)=>{
             if (error) {
@@ -134,6 +134,12 @@ router.patch('/:username', (request, response, next) =>{
                 for (let field in request.body){
                     result[field] = request.body[field];
                 }
+                var profileImageUpload = result["profileImage"];
+                if(request.file != undefined){
+                    profileImageUpload = request.file.path;
+                }
+                result["profileImage"] = profileImageUpload;
+
                 result.save((error, book)=>{
                     if (error){
                         response.status(500).send(error);
