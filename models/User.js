@@ -7,7 +7,7 @@ let UserSchema = new Schema({
     username: String,
     password: {type: String, select: false},
     confirmpassword: {type: String, select: false},
-    bio: String,
+    bio: {type: String, default: ""},
     langExp: [String],
     langLearn: [String],
     onlineStatus: Boolean,
@@ -15,7 +15,7 @@ let UserSchema = new Schema({
     blocked: [String],
     blocking: [String],
     blockedBy: [String],
-    profileImage: String
+    profileImage: {type: String, default: ""}
 });
 
 module.exports = mongoose.model('User', UserSchema);
