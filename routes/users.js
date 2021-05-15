@@ -46,7 +46,7 @@ function HandleError(response, reason, message, code){
 router.post('/', upload.single('profileImage'),(request, response, next) => {
     response.header("Access-Control-Allow-Origin", "*");
     response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    console.log(request.file);
+    //console.log(request.file);
     let obj = JSON.parse(JSON.stringify(request.body));
     let newUser = obj;
     console.log(newUser);
@@ -65,7 +65,7 @@ router.post('/', upload.single('profileImage'),(request, response, next) => {
             bio: newUser.bio,
             langExp: newUser.langExp,
             langLearn: newUser.langLearn,
-            profileImage: request.file.path
+            //profileImage: request.file.path
         });
         user.save((error) => {
             if (error) {
