@@ -28,6 +28,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74e15a10-537a-4d6d-862c-b04ce3bdd652" name="Default Changelist" comment="unblock working correctly">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/LingoJiveAPI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LingoJiveAPI.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/bin_www.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/bin_www.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profilepics/2021-05-14T05:48:40.182ZDSC_0027.jpg" beforeDir="false" />
@@ -67,7 +74,23 @@
       <change beforePath="$PROJECT_DIR$/profilepics/2021-05-15T21:01:13.415ZDSC_0027.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/profilepics/2021-05-15T21:03:25.713Za3b1b655-bbec-437a-a622-d8f8af94db44.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/profilepics/2021-05-15T21:33:50.648Za3b1b655-bbec-437a-a622-d8f8af94db44.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/blockuser.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/blockuser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/chats.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/chats.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/createprofile.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/createprofile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/directmessages.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/directmessages.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/editprofile.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/editprofile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/homepage.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/homepage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/messages.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/messages.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/myprofile.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/myprofile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/posts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/socket.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/socket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/unblockuser.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/unblockuser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/error.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/error.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layout.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,12 +207,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added chat saving" />

@@ -134,7 +134,15 @@ router.patch('/:username', upload.single('profileImage'), (request, response, ne
                     delete request.body.username;
                 }
                 for (let field in request.body){
-                    result[field] = request.body[field];
+                    if(field == "overallFluency"){
+                        console.log("fluency field found!")
+                        // result[field].push(request.body[field])
+                        console.log(request.body[field])
+                        result[field].push(request.body[field])
+                        console.log(result[field])
+                    }else{
+                        result[field] = request.body[field];
+                    }
                 }
                 if(request.file != undefined){
                     result["profileImage"] = Date.now().toString().substring(13, 26) + request.file.originalname.replace("[^\\w\\s-.", "");
