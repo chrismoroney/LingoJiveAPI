@@ -180,7 +180,7 @@
       <workItem from="1620972524955" duration="8000" />
       <workItem from="1621031338843" duration="8310000" />
       <workItem from="1621113249528" duration="1376000" />
-      <workItem from="1621155136699" duration="4166000" />
+      <workItem from="1621223647521" duration="1434000" />
     </task>
     <task id="LOCAL-00001" summary="Added chat saving">
       <created>1616369911517</created>
@@ -200,7 +200,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

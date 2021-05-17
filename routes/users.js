@@ -135,11 +135,25 @@ router.patch('/:username', upload.single('profileImage'), (request, response, ne
                 }
                 for (let field in request.body){
                     if(field == "overallFluency"){
-                        console.log("fluency field found!")
+                        // console.log("fluency field found!")
                         // result[field].push(request.body[field])
-                        console.log(request.body[field])
+                        // console.log(request.body[field])
                         result[field].push(request.body[field])
-                        console.log(result[field])
+                        // console.log(result[field])
+
+                        // overallFluency: [Number],
+                        //     pronunciation: [Number],
+                        //     conversationalAbility: [Number],
+                        //     listening: [Number],
+                        //     speaking: [Number]
+                    }else if(field == "pronunciation"){
+                        result[field].push(request.body[field])
+                    }else if(field == "conversationalAbility"){
+                        result[field].push(request.body[field])
+                    }else if(field == "listening"){
+                        result[field].push(request.body[field])
+                    }else if(field == "speaking"){
+                        result[field].push(request.body[field])
                     }else{
                         result[field] = request.body[field];
                     }
