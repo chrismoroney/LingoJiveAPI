@@ -20,7 +20,9 @@ let storage = multer.diskStorage({
         callback(null, './profilepics/');
     },
     filename: function(req, file, callback) {
-        callback(null, new Date().toISOString() + file.originalname);
+        file.originalname = Date.now().toString() + file.originalname.replace("[^\\w\\s-.", "");
+        callback(null, file.originalname);
+        console.log(file);
     }
 });
 let filter = function(req, file, callback){
@@ -156,11 +158,10 @@ router.patch('/:username', upload.single('profileImage'), (request, response, ne
                         result[field] = request.body[field];
                     }
                 }
-                var profileImageUpload = result["profileImage"];
                 if(request.file != undefined){
-                    profileImageUpload = request.file.path;
+                    result["profileImage"] = Date.now().toString().substring(13, 26) + request.file.originalname.replace("[^\\w\\s-.", "");
                 }
-                result["profileImage"] = profileImageUpload;
+
 
                 result.save((error, book)=>{
                     if (error){
