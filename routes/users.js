@@ -17,7 +17,7 @@ let User = require('../models/User.js');
 let multer = require('multer');
 let storage = multer.diskStorage({
     destination: function(req, file, callback){
-        callback(null, './profilepics/');
+        callback(null, './public/profilepics/');
     },
     filename: function(req, file, callback) {
         file.originalname = Date.now().toString() + file.originalname.replace("[^\\w\\s-.", "");
