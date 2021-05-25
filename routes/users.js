@@ -88,7 +88,7 @@ router.get('/', (request, response, next) => {
     if (firstname){
         User
             // need to adjust for case sensitivity
-            .find({"firstname": firstname})
+            .find({"firstname": { '$regex' : firstname, '$options' : 'i' }})
             .exec( (error, User) => {
                 if (error){
                     response.send({"error": error});
