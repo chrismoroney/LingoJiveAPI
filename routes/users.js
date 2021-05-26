@@ -84,6 +84,8 @@ router.get('/', (request, response, next) => {
 
     // firstname if found produces [this.response] instead of just this.response
     let firstname = request.query['firstname'];
+    let languageLearning = request.query['languageLearning'];
+    let languageSpoken = request.query['languageSpoken'];
     //let lastname = request.query['lastname'];
     if (firstname){
         User
@@ -96,7 +98,50 @@ router.get('/', (request, response, next) => {
                     response.send(User);
                 }
             });
-    } else {
+    }
+    else if(languageLearning && languageSpoken){
+
+        console.log("language spoken and learning");
+        User
+            .find({"langLearn": { $all: [languageLearning] },"langExp": { $all: [languageSpoken] }})
+            .exec((error, User) => {
+
+                if (error){
+                    response.send({"error": error});
+                } else {
+                    response.send(User);
+                }
+            });
+    }
+    else if(languageLearning){
+
+        console.log("just language learning");
+        User
+            .find({"langLearn": { $all: [languageLearning] }})
+            .exec((error, User) => {
+
+                if (error){
+                    response.send({"error": error});
+                } else {
+                    response.send(User);
+                }
+            });
+
+    }
+    else if(languageSpoken){
+        console.log("just language spoken");
+        User
+            .find({"langExp": { $all: [languageSpoken] }})
+            .exec((error, User) => {
+
+                if (error){
+                    response.send({"error": error});
+                } else {
+                    response.send(User);
+                }
+            });
+    }
+    else {
         User
             .find()
             .exec( (error, User) => {
@@ -111,7 +156,7 @@ router.get('/', (request, response, next) => {
 
 router.get('/:username', (request, response, next) =>{
     User
-        .find({"username": request.params.username}, (error, result) =>{
+        .find({"username": { '$regex' : request.params.username, '$options' : 'i' }}, (error, result) =>{
             if (error) {
                 response.status(500).send(error);
             }
