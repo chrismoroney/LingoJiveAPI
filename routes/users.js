@@ -84,6 +84,7 @@ router.get('/', (request, response, next) => {
 
     // firstname if found produces [this.response] instead of just this.response
     let firstname = request.query['firstname'];
+    let lastname = request.query['lastname'];
     let languageLearning = request.query['languageLearning'];
     let languageSpoken = request.query['languageSpoken'];
     //let lastname = request.query['lastname'];
@@ -91,6 +92,18 @@ router.get('/', (request, response, next) => {
         User
             // need to adjust for case sensitivity
             .find({"firstname": { '$regex' : firstname, '$options' : 'i' }})
+            .exec( (error, User) => {
+                if (error){
+                    response.send({"error": error});
+                } else {
+                    response.send(User);
+                }
+            });
+    }
+    else if (lastname){
+        User
+            // need to adjust for case sensitivity
+            .find({"lastname": { '$regex' : lastname, '$options' : 'i' }})
             .exec( (error, User) => {
                 if (error){
                     response.send({"error": error});
