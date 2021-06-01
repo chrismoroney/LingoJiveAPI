@@ -28,42 +28,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74e15a10-537a-4d6d-862c-b04ce3bdd652" name="Default Changelist" comment="unblock working correctly">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/LingoJiveAPI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LingoJiveAPI.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/bin_www.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/bin_www.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/bin/www" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/database.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/Chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Chat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/DirectMessage.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/DirectMessage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Message.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Message.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Post.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Post.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Reply.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Reply.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/blockuser.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/blockuser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/chats.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/chats.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/createprofile.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/createprofile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/directmessages.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/directmessages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/editprofile.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/editprofile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/homepage.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/homepage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/messages.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/messages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/myprofile.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/myprofile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/posts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/socket.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/socket.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/unblockuser.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/unblockuser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/error.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/error.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layout.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/profilepics/1621159865888DSC_0027.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/profilepics/1621363662568Caches.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/profilepics/1621374855909Cellar.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/profilepics/1621401906118some_name.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/createprofile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/editprofile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/homepage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/myprofile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/socket.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/error.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layout.pug" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +95,7 @@
       <recent name="C:\Users\Jonah\Documents\development\lingojiveapi\public" />
     </key>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -153,6 +138,8 @@
       <workItem from="1621113249528" duration="1376000" />
       <workItem from="1621223647521" duration="1434000" />
       <workItem from="1621443351905" duration="43000" />
+      <workItem from="1622511636150" duration="634000" />
+      <workItem from="1622513111262" duration="47000" />
     </task>
     <task id="LOCAL-00001" summary="Added chat saving">
       <created>1616369911517</created>
@@ -179,13 +166,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added chat saving" />
@@ -206,50 +192,50 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="421" y="116" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1616296584710" />
-    <state width="1638" height="248" key="GridCell.Tab.0.bottom" timestamp="1621484338611">
-      <screen x="0" y="23" width="1680" height="983" />
+    <state width="1638" height="248" key="GridCell.Tab.0.bottom" timestamp="1622513157525">
+      <screen x="0" y="23" width="1680" height="984" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1614113041159" />
     <state width="1237" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1621362176888" />
     <state width="1638" height="248" key="GridCell.Tab.0.bottom/0.23.1680.979@0.23.1680.979" timestamp="1614020957362" />
     <state width="1638" height="248" key="GridCell.Tab.0.bottom/0.23.1680.981@0.23.1680.981" timestamp="1616442267054" />
     <state width="1638" height="248" key="GridCell.Tab.0.bottom/0.23.1680.983@0.23.1680.983" timestamp="1621484338611" />
-    <state width="1638" height="248" key="GridCell.Tab.0.bottom/0.23.1680.984@0.23.1680.984" timestamp="1621113582257" />
+    <state width="1638" height="248" key="GridCell.Tab.0.bottom/0.23.1680.984@0.23.1680.984" timestamp="1622513157525" />
     <state width="1638" height="307" key="GridCell.Tab.0.bottom/0.23.1680.985@0.23.1680.985" timestamp="1621103693395" />
     <state width="1877" height="266" key="GridCell.Tab.0.bottom/1920.-87.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615242477799" />
     <state width="914" height="269" key="GridCell.Tab.0.bottom/1920.-87.1920.1050/0.0.1920.1050@1920.-87.1920.1050" timestamp="1619915907661" />
-    <state width="1638" height="248" key="GridCell.Tab.0.center" timestamp="1621484338610">
-      <screen x="0" y="23" width="1680" height="983" />
+    <state width="1638" height="248" key="GridCell.Tab.0.center" timestamp="1622513157524">
+      <screen x="0" y="23" width="1680" height="984" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1614113041158" />
     <state width="1237" height="176" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1621362176888" />
     <state width="1638" height="248" key="GridCell.Tab.0.center/0.23.1680.979@0.23.1680.979" timestamp="1614020957362" />
     <state width="1638" height="248" key="GridCell.Tab.0.center/0.23.1680.981@0.23.1680.981" timestamp="1616442267053" />
     <state width="1638" height="248" key="GridCell.Tab.0.center/0.23.1680.983@0.23.1680.983" timestamp="1621484338610" />
-    <state width="1638" height="248" key="GridCell.Tab.0.center/0.23.1680.984@0.23.1680.984" timestamp="1621113582255" />
+    <state width="1638" height="248" key="GridCell.Tab.0.center/0.23.1680.984@0.23.1680.984" timestamp="1622513157524" />
     <state width="1638" height="307" key="GridCell.Tab.0.center/0.23.1680.985@0.23.1680.985" timestamp="1621103693395" />
     <state width="1877" height="266" key="GridCell.Tab.0.center/1920.-87.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615242477799" />
     <state width="914" height="269" key="GridCell.Tab.0.center/1920.-87.1920.1050/0.0.1920.1050@1920.-87.1920.1050" timestamp="1619915907660" />
-    <state width="1638" height="248" key="GridCell.Tab.0.left" timestamp="1621484338610">
-      <screen x="0" y="23" width="1680" height="983" />
+    <state width="1638" height="248" key="GridCell.Tab.0.left" timestamp="1622513157524">
+      <screen x="0" y="23" width="1680" height="984" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1614113041158" />
     <state width="1237" height="176" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1621362176888" />
     <state width="1638" height="248" key="GridCell.Tab.0.left/0.23.1680.979@0.23.1680.979" timestamp="1614020957361" />
     <state width="1638" height="248" key="GridCell.Tab.0.left/0.23.1680.981@0.23.1680.981" timestamp="1616442267053" />
     <state width="1638" height="248" key="GridCell.Tab.0.left/0.23.1680.983@0.23.1680.983" timestamp="1621484338610" />
-    <state width="1638" height="248" key="GridCell.Tab.0.left/0.23.1680.984@0.23.1680.984" timestamp="1621113582254" />
+    <state width="1638" height="248" key="GridCell.Tab.0.left/0.23.1680.984@0.23.1680.984" timestamp="1622513157524" />
     <state width="1638" height="307" key="GridCell.Tab.0.left/0.23.1680.985@0.23.1680.985" timestamp="1621103693394" />
     <state width="1877" height="266" key="GridCell.Tab.0.left/1920.-87.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615242477799" />
     <state width="914" height="269" key="GridCell.Tab.0.left/1920.-87.1920.1050/0.0.1920.1050@1920.-87.1920.1050" timestamp="1619915907660" />
-    <state width="1638" height="248" key="GridCell.Tab.0.right" timestamp="1621484338611">
-      <screen x="0" y="23" width="1680" height="983" />
+    <state width="1638" height="248" key="GridCell.Tab.0.right" timestamp="1622513157525">
+      <screen x="0" y="23" width="1680" height="984" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1614113041158" />
     <state width="1237" height="176" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1621362176888" />
     <state width="1638" height="248" key="GridCell.Tab.0.right/0.23.1680.979@0.23.1680.979" timestamp="1614020957362" />
     <state width="1638" height="248" key="GridCell.Tab.0.right/0.23.1680.983@0.23.1680.983" timestamp="1621484338611" />
-    <state width="1638" height="248" key="GridCell.Tab.0.right/0.23.1680.984@0.23.1680.984" timestamp="1621113582256" />
+    <state width="1638" height="248" key="GridCell.Tab.0.right/0.23.1680.984@0.23.1680.984" timestamp="1622513157525" />
     <state width="1638" height="307" key="GridCell.Tab.0.right/0.23.1680.985@0.23.1680.985" timestamp="1621103693395" />
     <state width="1877" height="266" key="GridCell.Tab.0.right/1920.-87.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615242793496" />
     <state width="914" height="269" key="GridCell.Tab.0.right/1920.-87.1920.1050/0.0.1920.1050@1920.-87.1920.1050" timestamp="1619915907660" />
