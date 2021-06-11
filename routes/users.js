@@ -168,6 +168,8 @@ router.get('/', (request, response, next) => {
 } );
 
 router.get('/:username', (request, response, next) =>{
+    response.header("Access-Control-Allow-Origin", "*");
+    response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     User
         .find({"username": { '$regex' : request.params.username, '$options' : 'i' }}, (error, result) =>{
             if (error) {
@@ -182,6 +184,8 @@ router.get('/:username', (request, response, next) =>{
         });
 });
 router.patch('/:username', upload.single('profileImage'), (request, response, next) =>{
+    response.header("Access-Control-Allow-Origin", "*");
+    response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     User
         .findOne({"username": request.params.username}, (error, result)=>{
             if (error) {
@@ -233,6 +237,8 @@ router.patch('/:username', upload.single('profileImage'), (request, response, ne
         });
 });
 router.delete('/:username', (request, response, next) =>{
+    response.header("Access-Control-Allow-Origin", "*");
+    response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     User
         .findOne({"username": request.params.username}, (error, result)=>{
             if (error) {
