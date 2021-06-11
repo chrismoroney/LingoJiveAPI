@@ -17,11 +17,10 @@ let User = require('../models/User.js');
 let multer = require('multer');
 let storage = multer.diskStorage({
     destination: function(req, file, callback){
-        callback(null, './profilepics/');
+        callback(null, './public/profilepics/');
     },
     filename: function(req, file, callback) {
-        file.originalname = Date.now().toString() + file.originalname.replace("[^\\w\\s-.", "");
-        callback(null, file.originalname);
+        callback(null, Date.now().toString() + file.originalname.replace("[^\\w\\s-.", ""));
         console.log(file);
     }
 });
@@ -85,11 +84,14 @@ router.get('/', (request, response, next) => {
 
     // firstname if found produces [this.response] instead of just this.response
     let firstname = request.query['firstname'];
+    let lastname = request.query['lastname'];
+    let languageLearning = request.query['languageLearning'];
+    let languageSpoken = request.query['languageSpoken'];
     //let lastname = request.query['lastname'];
     if (firstname){
         User
             // need to adjust for case sensitivity
-            .find({"firstname": firstname})
+            .find({"firstname": { '$regex' : firstname, '$options' : 'i' }})
             .exec( (error, User) => {
                 if (error){
                     response.send({"error": error});
@@ -97,7 +99,62 @@ router.get('/', (request, response, next) => {
                     response.send(User);
                 }
             });
-    } else {
+    }
+    else if (lastname){
+        User
+            // need to adjust for case sensitivity
+            .find({"lastname": { '$regex' : lastname, '$options' : 'i' }})
+            .exec( (error, User) => {
+                if (error){
+                    response.send({"error": error});
+                } else {
+                    response.send(User);
+                }
+            });
+    }
+    else if(languageLearning && languageSpoken){
+
+        console.log("language spoken and learning");
+        User
+            .find({"langLearn": { $all: [languageLearning] },"langExp": { $all: [languageSpoken] }})
+            .exec((error, User) => {
+
+                if (error){
+                    response.send({"error": error});
+                } else {
+                    response.send(User);
+                }
+            });
+    }
+    else if(languageLearning){
+
+        console.log("just language learning");
+        User
+            .find({"langLearn": { $all: [languageLearning] }})
+            .exec((error, User) => {
+
+                if (error){
+                    response.send({"error": error});
+                } else {
+                    response.send(User);
+                }
+            });
+
+    }
+    else if(languageSpoken){
+        console.log("just language spoken");
+        User
+            .find({"langExp": { $all: [languageSpoken] }})
+            .exec((error, User) => {
+
+                if (error){
+                    response.send({"error": error});
+                } else {
+                    response.send(User);
+                }
+            });
+    }
+    else {
         User
             .find()
             .exec( (error, User) => {
@@ -114,7 +171,7 @@ router.get('/:username', (request, response, next) =>{
     response.header("Access-Control-Allow-Origin", "*");
     response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     User
-        .find({"username": request.params.username}, (error, result) =>{
+        .find({"username": { '$regex' : request.params.username, '$options' : 'i' }}, (error, result) =>{
             if (error) {
                 response.status(500).send(error);
             }

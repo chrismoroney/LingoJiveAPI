@@ -1,5 +1,3 @@
-// TRYING TO FIX LINGOJIVE
-
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -13,14 +11,9 @@ var app = express();
 //connect to db
 var db = require('./database');
 
-var loginRouter = require('./routes/login');
-var socketRouter = require('./routes/socket');
 var usersRouter = require('./routes/users');
 var messagesRouter = require('./routes/messages');
 var postsRouter = require('./routes/posts');
-var homepageRouter = require('./routes/homepage');
-var myprofileRouter = require('./routes/myprofile');
-var createprofileRouter = require('./routes/createprofile');
 var chatsRouter = require('./routes/chats');
 var dmRouter = require('./routes/directmessages');
 var blockRouter = require('./routes/blockuser');
@@ -43,14 +36,9 @@ app.use(express.static('profilepics'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
-app.use('/', loginRouter);
-app.use('/socket', socketRouter);
 app.use('/users', usersRouter);
 app.use('/messages', messagesRouter);
 app.use('/posts', postsRouter);
-app.use('/homepage', homepageRouter);
-app.use('/myprofile', myprofileRouter);
-app.use('/createprofile', createprofileRouter);
 app.use('/chats', chatsRouter);
 app.use('/directMessages', dmRouter);
 app.use('/blockUser', blockRouter);
